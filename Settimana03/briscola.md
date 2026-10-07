@@ -61,3 +61,4 @@ Assumiamo che il seme di briscola sia `C` (cuori).
 - Oltre alla carta vincente, stampare anche il numero di punti da attribuire al giocatore 1 ed al giocatore 2, ad esempio "Giocatore 1 vice con 3 punti, giocatore 2 perde con 0 punti"
 - Visualizzare le carte nel colore corretto (nero o rosso), a seconda del seme
 - ... altre idee?
+

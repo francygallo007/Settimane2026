@@ -1,10 +1,26 @@
+# Definisci costanti
+valori = "24567JQK3A"
+SEMI = "CQFP"
+
 # Acquisisci i dati
-Seme = input("Inserisci il seme di briscola: ")
-Carta1 = input("Inserisci la prima carta giocata: ")
-Carta2 = input("Inserisci la seconda carta giocata: ")
+Seme = input("Inserisci il seme di briscola: ").upper()
+Carta1 = input("Inserisci la prima carta giocata: ").upper()
+Carta2 = input("Inserisci la seconda carta giocata: ").upper()
 
 # Verifica la correttezza dei dati (facciamo dopo)
 
+"""
+len(Seme) == 1 
+Seme in SEMI
+
+len(carta1) == 2
+seme1 in SEMI 
+valore1 in valori
+
+len(Carta2) == 2 
+seme2 in SEMI
+valore2 in valori
+"""
 # Determina il vincitore
 seme1 = Carta1[1]
 seme2 = Carta2[1]
@@ -14,7 +30,6 @@ valore2 = Carta2[0]
 # valore = 2 4 5 6 7 J Q K 3 A
 # ordine = 1 2 3 4 56 7 8 9 10
 
-valori = "24567JQK3A"
 ordine1 = valori.index(valore1) + 1
 ordine2 = valori.index(valore2) + 1
 
@@ -28,18 +43,14 @@ if carta2 ha seme di briscola, ma carta1 non ha seme di briscola:
 """
 if seme1 == Seme and seme2 != Seme:
     print("vince", Carta1)
+elif seme2 == Seme and seme1 != Seme:
+    print("vince", Carta2)
+elif seme1 != seme2 :
+    print("vince", Carta1)
+elif ordine1 > ordine2:
+    print("vince", Carta1)
 else:
-    if seme2 == Seme:
-        print("vince", Carta2)
-
-    if seme1 != seme2 :
-        print("vince", Carta1)
-    else:
-        #di sicuro seme1 == seme2
-        if ordine1 > ordine2:
-            print("vince", Carta1)
-        else:
-            print("vince", Carta2)
+    print("vince", Carta2)
 
 
 
