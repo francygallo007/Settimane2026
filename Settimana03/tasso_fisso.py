@@ -10,12 +10,20 @@ e la differenza tra saldo finale e iniziale
 saldo_iniziale = 1000
 saldo = saldo_iniziale
 TASSO = 5
-anno = 1 
+anno = 0 
 
 
-while anno <= 10: #saldo <= 2000:
+while anno < 10: #saldo <= 2000:
     saldo += saldo * TASSO/100
     anno += 1 
      
 differenza = saldo - saldo_iniziale
 print("Anno: " + str(anno) + "\nSaldo: "+ str(saldo) + "\nDifferenza: "+ str(differenza))
+
+
+i = 0
+totale = 0
+while totale < 10:
+    i += 1
+    tatle += 1
+    print(i, totale)
