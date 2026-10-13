@@ -19,3 +19,4 @@ for i in range(len(nome)):
 for i, lettera in enumerate(nome):
     print(i, lettera)
 
+
