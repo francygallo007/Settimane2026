@@ -28,7 +28,7 @@ valore1 = Carta1[0]
 valore2 = Carta2[0]
 
 # valore = 2 4 5 6 7 J Q K 3 A
-# ordine = 1 2 3 4 56 7 8 9 10
+# ordine = 1 2 3 4 5 6 7 8 9 10
 
 ordine1 = valori.index(valore1) + 1
 ordine2 = valori.index(valore2) + 1
