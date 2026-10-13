@@ -22,4 +22,4 @@ while not finito:
     numero = float(input("Dammi un numero: "))
     if numero < 0:
         finito = True
-    
+
