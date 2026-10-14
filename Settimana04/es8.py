@@ -17,4 +17,16 @@ for ch in s:
         nch = ch
     nuova += nch
 print(nuova)
-    
+
+print()
+
+nuova = ""
+for ch in s:
+    if ch.isdigit():
+        if ch == "9":
+            nuova +="0"
+        else:
+            nuova += str(int(ch)+1)
+    else:
+        nuova+=ch
+print(nuova)
