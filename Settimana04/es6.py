@@ -17,8 +17,8 @@ else:
 #due segni di punteggiatura consecutivi
 
 spazio = False
-for i in range(len(s)):
-    if s[i].isspace() and s[i-1].isspace:
+for i in range(1, len(s)):
+    if s[i] == " " and s[i-1] == " ":
         spazio = True
 if spazio:
     print("Esistono due spazi consecutivi")
