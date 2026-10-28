@@ -7,10 +7,6 @@ somma = 0
 
 for i in range(10):
     x = int(input("Numero: "))
-    while x <= 0:
-        print("Dovevi inserire un numero positivo: ")
-        x = int(input("Numero: "))
-    
     if i%2 == 0:
         somma += x
     else:
