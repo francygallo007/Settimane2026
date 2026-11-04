@@ -43,16 +43,15 @@ for riga in range(N):
 
         for i in range(-1, 2):
             for j in range(-1, 2):
-                if campo[riga+i][col+j]:
-                    if (
-                        (i != 0 or j != 0) and 
-                        riga+i < N and
-                        riga+i >= 0 and
-                        col+j < N and
-                        col+j >= 0
-                    ):
-                        n_vicini += 1
-                    
+                if (
+                    (i != 0 or j != 0) and 
+                    riga+i < N and
+                    riga+i >= 0 and
+                    col+j < N and
+                    col+j >= 0
+                    ):                
+                    if campo[riga+i][col+j]:
+                        n_vicini += 1        
         nuova_riga.append(n_vicini)
     vicini.append(nuova_riga)
 
