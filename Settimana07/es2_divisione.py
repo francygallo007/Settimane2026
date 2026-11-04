@@ -43,3 +43,24 @@ supereroi = [
     "Arthur Curry"
 ]
 
+nomi = []
+cognomi = []
+
+for sup in supereroi:
+    pos_spazio = sup.find(" ")
+    nomi.append(sup[:pos_spazio])
+    cognomi.append(sup[(pos_spazio + 1):])
+
+print(nomi)
+print(cognomi)
+
+
+nomi = []
+cognomi = []
+for sup in supereroi:
+    separati = sup.split(" ")
+    nomi.append(separati[0])
+    cognomi.append(separati[1])
+
+print(nomi)
+print(cognomi)
