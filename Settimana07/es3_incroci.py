@@ -20,3 +20,13 @@ Nello stesso luogo: giorno 1
 Nello stesso luogo: giorno 3
 Nello stesso luogo: giorno 6
 """
+tutti_qui = True
+
+for giorno in range(len(luoghi[0])):
+    tutti_qui = True
+    for a in range(len(luoghi)):
+        if luoghi[a][giorno] != luoghi[0][giorno]:
+            tutti_qui = False
+    if tutti_qui:
+        print(f"Nello stesso luogo: giorno {giorno}")
+
