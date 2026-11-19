@@ -1,10 +1,8 @@
 # 128
 
-I registri rappresentanpo una picola uantità di memoria interna alla CPU, direttamente
-connessi alla ALU e alla FPU. Sonon il tipo di memoria più veloce. ervono per memorizzare
-i dati di lavoro del programma e gli operandi/risultati delle operazioni della ALU
+I registri rappresentano una piccola quantità di memoria interna alla CPU, direttamente connessi alla ALU e alla FPU. Sono il tipo di memoria più veloce. Servono per memorizzare i dati di lavoro del programma e gli operandi/risultati delle operazioni della ALU
 
-il porgram counter non contiene dati di lavoro bensì contiene l'indirizzo di meomoria
+il program counter non contiene dati di lavoro bensì contiene l'indirizzo di meomoria
 della prossima istruzione che la CPU dovrà eseguire. Normalmente si incrementa da solo dopo
 aver letto il codice dell'istruzione da eseguire.
 
@@ -15,7 +13,7 @@ Unità di controllo
     Instruction Register(IR): contiene il codice binario della istruzione in corso di esecuzione
     Flag: registro che memorizza una serie di bit che rappresentano l'esito dell'ultima operazione calcolata dall'ALU
     (positiva, negatova, overflow, carry, zero, ...)
-    logica di controllo : legge il valore dell'IR e determina quali operazione devono essere eseguite e
+    logica di controllo : legge il valore dell'IR e determina quali operazioni devono essere eseguite e
     su quali dati
 
 # 126
@@ -28,7 +26,7 @@ quantti bit servono nell'ABUS per indirizzare 4k celle?
 
 ALU = unità aritmetico logica
 
-svolge le oprazioni tra numeri interi (binario puro o compplemento due), sulla base dei comandi
+svolge le oprazioni tra numeri interi (binario puro o complemento due), sulla base dei comandi
 che provengono dalla logica di controllo dell'unità di controllo 
 e dei dati presenti nei regitri. Salva il risultato in un registro a aggiorna il registro dei flag
 

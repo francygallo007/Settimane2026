@@ -1,0 +1,76 @@
+# 1 
+AA: 1010 1010
+F3: 1111 0011
+7F: 0111 1111
+
+Considerati in CA2 il numero più piccolo sarebbe F3
+
+# 2
+8: 1000
+-8: 0111+
+    0001=
+    1000
+su 4 bit da OVF poichè i segni dei numeri sommati sono
+positivi ma il risultato è negativo.
+In CA2 il numero +8 non si può con solo 4 bit (il massimo è +7)
+In esadecimale:
+1000 --> 8
+
+# 3
+A3: 1010 0011 --> -93
+7F: 0111 1111 --> +127
+-93+127 = +34 (risulato atteso)
+10100011+
+01111111=
+00100010 --> 32+2 = 34
+
+quando sommiamo un numero positivo e uno negativo
+non si verifica mai overflow, anche se ci sarebbe un riporto
+di 1 sul nono bit.
+
+# 4
+su 6 bit
+CA2:
++ grande = 011111 --> 16+8+4+2+1 = 31
++ piccolo = 100000 --> -32
+binario puro:
++ grande = 111111 --> 127
++ piccolo = 000000 --> 0
+
+# 5
+01 : 0000 0001
+A2 : 1010 0010
+B2 : 1011 0010
+32 : 0011 0010
+80 : 1000 0000
+7F : 0111 1111
+FF : 1111 1111
+
+ordine crescente in CA2
+01111111
+00110010
+00000001
+11111111
+10110010
+10100010
+10000000
+
+# 6
+B5 : 1011 0101
+binario puro: 128+32+16+4+1 = 181
+M&S: - (32+16+4+1) = -53
+CA2: -128+34+16+4+1 = -75
+
+# 7
+(1)
+0 10011+
+0 11101=
+0 10000
+C'è OVF perchè ci sarebbe ancora un riporto di 1 nel modulo
+(2)
+0 11101+
+1 10111=
+0 00110 --> 6
+
++29-23 = 6
+
